@@ -21,6 +21,8 @@
     />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta
       name="description"
       content="Desenvolvedor Front End & UX/UI Designer
@@ -47,8 +49,9 @@
         alt="Lobo Cinza"
         width="360"
         height="520"
+        data-aos="zoom-in"
       />
-      <div>
+      <div data-aos="fade-left">
         <h1>
           Desenvolvedor <br />
           Front End & <br />
@@ -59,16 +62,18 @@
     </main>
 
     <section class="experiencia" id="experiencia" aria-label="Experiência">
-      <h2 class="subtitulo">Experiência</h2>
+      <h2 class="subtitulo" data-aos="fade-right" data-aos-offset="100">
+        Experiência
+      </h2>
       <div>
-        <p class="experiencia-texto">
+        <p class="experiencia-texto" data-aos="fade-left" data-aos-offset="50">
           Desenvolvo pequenos projetos como o Bikcraft utilizando apenas
           <strong>HTML</strong>, <strong>CSS</strong> e
           <strong> JavaScript</strong>. Para aplicativos web como a rede social
           Dogs eu trabalhei no <strong>UX</strong> e <strong>UI</strong> Design
           do projeto.
         </p>
-        <div class="empresa">
+        <div class="empresa" data-aos="fade-up" data-aos-offset="50">
           <span class="empresa-ano">2045</span>
           <h3 class="empresa-titulo">Bikcraft</h3>
           <span class="empresa-titulo">Desenvolvedor Júnior </span>
@@ -85,7 +90,7 @@
             <li>UI Design</li>
           </ul>
         </div>
-        <div class="empresa">
+        <div class="empresa" data-aos="fade-up" data-aos-offset="50">
           <span class="empresa-ano">2044-45 </span>
           <h3 class="empresa-titulo">Surfbot</h3>
           <span class="empresa-titulo">Estagiário</span>
@@ -100,7 +105,7 @@
             <li>JavaScript</li>
           </ul>
         </div>
-        <div class="empresa">
+        <div class="empresa" data-aos="fade-up" data-aos-offset="50">
           <span class="empresa-ano">2044 </span>
           <h3 class="empresa-titulo">Brafé</h3>
           <span class="empresa-titulo">Desenvolvedor Júnior</span>
@@ -120,40 +125,42 @@
 
     <section class="formacao" id="formacao" aria-label="Formação">
       <div class="formacao-container">
-        <h2 class="subtitulo">Formação</h2>
+        <h2 class="subtitulo" data-aos="fade-right" data-aos-offset="50">
+          Formação
+        </h2>
         <div>
-          <p class="formacao-texto">
+          <p class="formacao-texto" data-aos="fade-left" data-aos-offset="50">
             Minha mais recente experiência acadêmica foi o
             <strong>mestrado</strong> 🎓 que fiz no exterior em
             <strong>UX Design</strong>. Além disso me mantenho sempre atualizado
             com cursos intensivos online.
           </p>
           <ul class="faculdade-lista">
-            <li class="faculdade">
+            <li class="faculdade" data-aos="fade-up" data-aos-offset="80">
               <span class="faculdade-tipo">Bacharel</span>
               <h3 class="faculdade-curso">Administração de Empresas</h3>
               <span class="faculdade-instituicao">UFRRJ</span>
             </li>
-            <li class="faculdade">
+            <li class="faculdade" data-aos="fade-up" data-aos-offset="180">
               <span class="faculdade-tipo">TECNÓLOGO </span>
               <h3 class="faculdade-curso">Digital</h3>
               <span class="faculdade-instituicao">Infnet </span>
             </li>
-            <li class="faculdade">
+            <li class="faculdade" data-aos="fade-up" data-aos-offset="280">
               <span class="faculdade-tipo">MESTRE</span>
               <h3 class="faculdade-curso">User Experience Design</h3>
               <span class="faculdade-instituicao">UCLL</span>
             </li>
           </ul>
           <div class="formacao-extra">
-            <div class="cursos">
+            <div class="cursos" data-aos="fade-up" data-aos-offset="100">
               <h3>Cursos Intensivos</h3>
               <ul>
                 <li>UX Design & UI Design <span>56h</span></li>
                 <li>Front End para Iniciantes <span>72h</span></li>
               </ul>
             </div>
-            <div class="idiomas">
+            <div class="idiomas" data-aos="fade-up" data-aos-offset="100">
               <h3>Idiomas</h3>
               <ul>
                 <li>Inglês <span>/ Fluente</span></li>
@@ -179,5 +186,11 @@
         <p class="footer-copy">Lobo. Alguns direitos reservados.</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
