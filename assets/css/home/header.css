@@ -57,6 +57,7 @@
     width: 20px;
     border-top: 2px solid;
     display: block;
+    color: #000;
   }
   #hamburger::after,
   #hamburger::before {
@@ -64,7 +65,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: currentColor;
+    background: #000;
     margin-top: 5px;
   }
 }
